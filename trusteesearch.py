@@ -29,6 +29,7 @@ def search_and_extract(query):
 
 if __name__ == "__main__":
     visited_links = set()
-    search_queries = ['charity trustee recruitment uk', 'effective ways to recruit a trustee', 'points to remember while finding charity trustees']
+    search_queries = ['Charity trustee recruitment UK', 'Effective ways to recruit a trustee', 'Points to remember while finding charity trustees']
     for search_query in search_queries:
+        st.header(search_query.upper(), divider = "rainbow")
         search_and_extract(search_query)
